@@ -10,11 +10,7 @@ class LikeButton extends React.Component {
       likes: false,
     }
   }
-  // state = {
-  //   likes: false,
-  // }
   clickedLike = () => {
-    // const likes = this.state.likes;
     this.setState ({
       likes: !this.state.likes
     })
@@ -23,35 +19,11 @@ class LikeButton extends React.Component {
   render(i) {
     const likes = this.state.likes;
     console.log("hello")
-    // const click = likes.map((liked) => {
-    //   if(liked == )
-    // })
 
     return (
     <button className="likeButton" key={i} onClick={() => this.clickedLike()}>{likes ? "Unlike" : "Like"}</button>
     )
   }
-  // clickedLike = (event,index) => {
-  //   // const likes  = this.state.likes 
-  //   this.setState({
-  //     likes: !this.state.likes
-  //   })
-  // }
-  //   render() {
-  //     const likes = this.state.likes
-  //     // console.log(likes, "wowza")
-  //     const click = likes && this.likes.map((liked) => {
-  //     const favorited = liked ?
-  //     'Like' : 'Unlike'
-  //     // console.log(click, "hey")
-  //   return (
-  //     <button key={liked} onClick = {() => likes}></button>
-  //   )
-  // })
-  // return (
-  //   <button>{this.clickedLike}</button>
-  // )
-  // } 
 }
 
 
@@ -90,27 +62,5 @@ class App extends React.Component {
     );
   }
 }
-
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
 
 export default App;

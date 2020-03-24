@@ -43,13 +43,13 @@ class App extends React.Component {
     })
   }
   render() {
-    console.log(this.state);
+    console.log(this.state, "matched");
     return (
         <div>
           <h1> Beer Selection</h1>
           {this.state.beers.map((beer, index) => {
             // let drink = beer
-            console.log("You found me!", beer)
+            // console.log("You found me!", beer)
             return (
             <div  key= {index}>
               <li>{beer.name + " - " + beer.tagline}</li>
